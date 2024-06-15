@@ -21,7 +21,7 @@ class Bird:
     def __init__(self):
         self._bird.geometry("120x120+180+400")
         self._bird.title("bird")
-        _img = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\bird.png")
+        _img = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\flappy bird\\bird.png")
         _img = _img.resize((150, 150))
         _photo_img = ImageTk.PhotoImage(_img)
         _img_label = tk.Label(self._bird, image=_photo_img)
@@ -63,8 +63,8 @@ class PipePair:
         self._bottom_pipe.geometry(f"180x{(pyautogui.size()[1] - self.gap_height - gap_size)}+{int(self.x_pos)}+{gap_height+gap_size}")
         self._bottom_pipe.title('pipe bottom')
 
-        _img = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\pipe_end.png")
-        _img2 = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\pipe.png")
+        _img = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\flappy bird\\pipe_end.png")
+        _img2 = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\flappy bird\\pipe.png")
         _img = _img.resize((180, 180))
         _img = _img.rotate(180)
         _img2 = _img.resize((155, 155))
@@ -87,8 +87,8 @@ class PipePair:
         _img_label23.pack(side="bottom")
         _img_label24.pack(side="bottom")
 
-        _img3 = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\pipe_end.png")
-        _img4 = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\pipe.png")
+        _img3 = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\flappy bird\\pipe_end.png")
+        _img4 = Image.open("C:\\Users\\Viktor\\Desktop\\hry\\nie hry\\vscode\\flappy bird\\pipe.png")
         _img3 = _img3.resize((180, 180))
         _img4 = _img4.resize((155, 155))
         _photo_img3 = ImageTk.PhotoImage(_img3)
